@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Rastrear pedido</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,10 +30,12 @@
         </div>
     </nav>
     <div class="container-fluid p-5 bg-primary text-white text-center">
+        <div class="col-sm-4">
+            <p>Rastrear pedido:</p>
+        </div>
         <form class="d-flex">
-            <label for="rpedido" class="form-label">Rastrei seu Pedido</label>
-            <input class="form-control me-2" type="text" placeholder="Insira seu cpf/cnpj ou código de rastreio"
-                value="">
+            <input style="max-width:600px; margin-left: 150px;" class="form-control me-2" type="text"
+                placeholder="Insira seu cpf/cnpj ou código de rastreio" value="">
             <button class="btn btn-secondary" type="button" onclick="renderizarParaTelaDeRastreio();">Buscar</button>
         </form>
     </div>

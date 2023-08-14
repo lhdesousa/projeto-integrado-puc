@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <title>Inicio</title>
     <meta charset="utf-8">
@@ -9,7 +10,7 @@
     <script src="js/script.js"></script>
 </head>
 
-<body >
+<body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="javascript:void(0)">Logo</a>
@@ -30,10 +31,12 @@
     </nav>
 
     <div class="container-fluid p-5 bg-primary text-white text-center">
+        <div class="col-sm-4">
+            <p>Rastrear pedido:</p>
+        </div>
         <form class="d-flex">
-            <label for="rpedido" class="form-label">Rastrei seu Pedido</label>
-            <input class="form-control me-2" type="text" placeholder="Insira seu cpf/cnpj ou código de rastreio"
-                value="">
+            <input style="max-width:600px; margin-left: 150px; margin-right: 150px;" class="form-control me-2"
+                type="text" placeholder="Insira seu cpf/cnpj ou código de rastreio" value="">
             <button class="btn btn-secondary" type="button" onclick="renderizarParaTelaDeRastreio();">Buscar</button>
         </form>
     </div>
@@ -42,7 +45,8 @@
         <div class="container">
             <div class="row my-3">
                 <div class="col">
-                    <h4>Serão dashboards flow 2</h4>
+                    <h4>Serão dashboards no flow 2 de entregas de produtos em tempo real<br> E grids sobre contatos com
+                        a transportadora</h4>
                 </div>
             </div>
             <div class="row my-2">
@@ -86,7 +90,7 @@
             </div>
         </div>
     </div>
-<br>
+    <br>
 </body>
 
 </html>
