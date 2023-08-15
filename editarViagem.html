@@ -11,58 +11,34 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="javascript:void(0)">Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="portalDashboard.html">Início</a>
-                    </li>
-                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                        data-bs-toggle="dropdown">Gerenciamento</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="gerenciamentoHistoricoViagens.html">Gerenciamento de Histórico viagens</a></li>
-                        <li><a class="dropdown-item" href="#">Gerenciamento de Viagens</a></li>
-                        <li><a class="dropdown-item" href="gerenciamentoUsuarios.html">Gerenciamento de Usuários</a></li>
-                    </ul>
-                    <div class="collapse navbar-collapse" id="mynavbar">
-                        <form class="d-flex">
-                            <button class="btn btn-primary" onclick="renderizarParaPortalDoColaborador();" type="button">Sair</button>
-                        </form>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <div class="container">
         <br>
         <h2>Editar Agendamento de Viagem:</h2>
+    </div>
+        <div class="container p-5 my-5 border">
+        <div class="container mt-3">
+            <h2>Vincular Encomendas</h2>
+            <p>Vincular encomendas disponiveis para entrega:</p>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Vincular Encomendas:</th>
+                        <th>Desvincular:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Será tipo um pick list em JSF</td>
+                        <td>Será tipo um pick list em JSF</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <div class="container p-5 my-5 border">
         <div class="container mt-3">
             <table class="table table-borderless">
                 <tbody>
-                    <tr>
-                        <td>Código da Encomenda:</td>
-                        <td>Descrição:</td>
-                        <td>Código de Rastreamento:</td>
-                    </tr>
-                    <tr>
-                        <td><input type="cdEncomenda" class="form-control" id="cde" placeholder="Insira Código da Encomenda"
-                                name="pswd"></td>
-                        <td>                            
-                            <input type="entrega" class="form-control" id="cddd" value="Caixa Média" disabled name="pswd">
-                        </td>
-                        </td>
-                        <td>
-                            <input type="entrega" class="form-control" id="cddd" value="Caixa Média" disabled
-                            name="pswd"></td>
-                        </td>
-                    </tr>
                     <tr>
                         <td>Motorista:</td>
                         <td>Veículo:</td>
