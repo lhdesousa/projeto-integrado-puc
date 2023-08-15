@@ -8,6 +8,7 @@ body {
   padding: 0;
   width: 200px;
   background-color: #f1f1f1;
+  background-color: #555;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -15,7 +16,7 @@ body {
 
 .sidebar a {
   display: block;
-  color: black;
+  color: #2196F3;
   padding: 16px;
   text-decoration: none;
 }
