@@ -5,7 +5,8 @@
     <title>Portal do Administrador</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </head>
@@ -21,25 +22,42 @@
                 <tbody>
                     <tr>
                         <td>Nome:</td>
-                        <td>CPF</td>
-                        <td>E-mail</td>
+                        <td>Data de Nascimento:</td>
                     </tr>
                     <tr>
-                        <td><input type="email" class="form-control" id="pwd" placeholder="Insira o nome"
-                                name="pswd"></td>
+                        <td><input type="email" class="form-control" id="pwd" placeholder="Insira o nome" name="pswd">
+                        </td>
+                        <td><input type="date" class="form-control" id="pwd" name="pswd"></td>
+                    </tr>
+                    <tr>
+                        <td>CPF:</td>
+                        <td>Cargo:</td>
+                    </tr>
+                    <tr>
                         <td><input type="text" length="13" class="form-control" id="pwd" placeholder="Insira o CPF"
                                 name="pswd"></td>
-                        <td><input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        <td><input type="text" class="form-control" id="pwd" placeholder="Inserir Cargo" name="pswd">
                         </td>
+
                     </tr>
                     <tr>
+                        <td>E-mail:</td>
                         <td>Senha:</td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="email" class="form-control" id="email" placeholder="Inserir email"
+                                name="email">
+                        </td>
+                        <td><input type="password" class="form-control" id="pwd" placeholder="Inserir senha"
+                                name="pswd"></td>
+                    </tr>
+                    <tr>
                         <td>Nivel de Pefil:</td>
                         <td>Bloquear usuário:</td>
                     </tr>
                     <tr>
-                        <td><input type="password" class="form-control" id="pwd" placeholder="Enter password"
-                                name="pswd"></td>
+
                         <td>
                             <select class="form-select">
                                 <option>Administrador</option>

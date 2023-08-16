@@ -7,7 +7,7 @@
     <title>Portal do Administrador</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        crossorigin="anonymous">
     <script src="js/script.js"></script>
 </head>
 
@@ -30,23 +30,16 @@
                         <tr>
                             <td>Nome:</td>
                             <td>E-mail</td>
-                            <td>Nivel de Pefil:</td>
                         </tr>
                         <tr>
                             <td><input type="email" class="form-control" id="pwd" placeholder="Insira o nome"
                                     name="pswd"></td>
                             <td><input type="text" length="13" class="form-control" id="pwd"
                                     placeholder="Insira o Email" name="pswd"></td>
-                            <td>
-                                <select class="form-select">
-                                    <option>Administrador</option>
-                                    <option>Gestor</option>
-                                    <option>Motorista</option>
-                                </select>
-                            </td>
                         </tr>
                         <tr>
-                            <td>Usuário Inativo:</td>
+                            <td>Nivel de Pefil:</td>
+                            <td>Status Usuário:</td>
                         </tr>
                         <tr>
                             <td>
@@ -56,10 +49,18 @@
                                 </select>
                             </td>
                             <td>
+                                <select class="form-select">
+                                    <option>Administrador</option>
+                                    <option>Gestor</option>
+                                    <option>Motorista</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
                                 <button type="submit" class="btn btn-primary">Pesquisar</button>
                             </td>
                         </tr>
-
                     </tbody>
                 </table>
             </div>
@@ -71,8 +72,8 @@
                 <button type="submit" class="btn btn-success" onclick="">Exportar Relatório</button>
                 <br>
                 <br>
-                <table class="table table-hover">
-                    <thead>
+                <table class="table">
+                    <thead class="thead-dark">
                         <tr>
                             <th>Nome</th>
                             <th>Email</th>
@@ -108,16 +109,6 @@
                     </tbody>
                 </table>
             </div>
-        </div>
-        <div class="pagination">
-            <a href="#">&laquo;</a>
-            <a href="#">1</a>
-            <a class="active" href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-            <a href="#">&raquo;</a>
         </div>
     </div>
 
