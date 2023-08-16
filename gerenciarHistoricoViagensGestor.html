@@ -10,7 +10,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background-color: #DCDCDC; color: #2196F3;">
 
     <div class="sidebar">
         <a class="active" href="portalGestor.html">Início</a>
@@ -20,63 +20,64 @@
     </div>
 
     <div class="content">
-            <h2>Gerenciamento Histórico de Viagens:</h2>
-            <div class="container p-5 my-5 border">
-                <table class="table table-borderless">
+        <h2>Gerenciamento Histórico de Viagens:</h2>
+        <div class="container p-5 my-5 border">
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <td>Código:</td>
+                        <td>Descrição:</td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="disabledTextInput" class="form-control"></td>
+                        <td><input type="text" id="disabledTextInput" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Viagem do dia: </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="disabledTextInput" class="form-control"></td>
+                        <td><button type="submit" class="btn btn-primary">Pesquisar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="container p-5 my-5 border">
+            <div class="container">
+                <button type="submit" class="btn btn-success" onclick="">Exportar Relatório</button>
+                <br>
+                <br>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Codigo</th>
+                            <th>Descrição</th>
+                            <th>Data</th>
+                            <th>Viagem</th>
+                            <th>Motorista</th>
+                            <th>Exibir Última de Localização</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
-                            <td>Código:</td>
-                            <td>Descrição:</td>
-
-                        </tr>
-                        <tr>
-                            <td><input type="text" id="disabledTextInput" class="form-control"></td>
-                            <td><input type="text" id="disabledTextInput" class="form-control"></td>
-                        </tr>
-                        <tr>
-                            <td>Viagem do dia: </td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" id="disabledTextInput" class="form-control"></td>
-                            <td><button type="submit" class="btn btn-primary">Pesquisar</button></td>
+                            <td>96</td>
+                            <td>Acidente de transito</td>
+                            <td>25/07/2023</td>
+                            <td>3</td>
+                            <td>Sergio</td>
+                            <td>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#myModal">
+                                    Exibir Localização
+                                </button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
-                
             </div>
-            <div class="container p-5 my-5 border">
-                <div class="container">
-                    <button type="submit" class="btn btn-success" onclick="">Exportar Relatório</button>
-                    <br>
-                    <br>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Codigo</th>
-                                <th>Descrição</th>
-                                <th>Data</th>
-                                <th>Viagem</th>
-                                <th>Motorista</th>
-                                <th>Exibir Mapa de Localização</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>96</td>
-                                <td>Acidente de transito</td>
-                                <td>25/07/2023</td>
-                                <td>3</td>
-                                <td>Sergio</td>
-                                <td>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                                        Exibir Localização
-                                      </button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+        </div>
         <div class="pagination">
             <a href="#">&laquo;</a>
             <a href="#">1</a>
@@ -88,7 +89,6 @@
             <a href="#">&raquo;</a>
         </div>
     </div>
-
 </body>
 
 </html>

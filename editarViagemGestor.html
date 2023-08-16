@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Editar Agendar Viagem</title>
+    <title>Portal do Gestor</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -10,30 +10,10 @@
     <script src="js/script.js"></script>
 </head>
 
-<body>
+<body style="color: #2196F3;">
     <div class="container">
         <br>
         <h2>Editar Agendamento de Viagem:</h2>
-    </div>
-        <div class="container p-5 my-5 border">
-        <div class="container mt-3">
-            <h2>Vincular Encomendas</h2>
-            <p>Vincular encomendas disponiveis para entrega:</p>
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th>Vincular Encomendas:</th>
-                        <th>Desvincular:</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Será tipo um pick list em JSF</td>
-                        <td>Será tipo um pick list em JSF</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
     </div>
     <div class="container p-5 my-5 border">
         <div class="container mt-3">
@@ -64,11 +44,25 @@
                             <input type="text" class="form-control" id="cddd" placeholder="Insira o Destino Final"></td>
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            Vincular Encomendas:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="entrega" class="form-control" id="cddd" placeholder="Insira a encomenda"
+                            name="pswd">
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary">Adicionar</button>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
         <button type="submit" class="btn btn-warning" onclick="renderizarParaListarViagensGestor();">Voltar</button>
-        <button type="submit" class="btn btn-success" onclick="">Salvar</button>
+        <button type="submit" class="btn btn-primary" onclick="renderizarParaListarViagensGestor();">Salvar</button>
     </div>
 </body>
 
